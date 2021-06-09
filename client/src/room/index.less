@@ -1,0 +1,143 @@
+.room-page {
+  margin: auto auto;
+  padding: 0;
+  min-width: 800px;
+  max-width: 1000px;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+  overflow: hidden;
+  .room-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Brandon Grotesque Bold", sans-serif !important;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    padding: 20px 20px;
+    background: #7267f0e5;
+    .room-header-title {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    .header-btn-group {
+      flex-grow: 2;
+      display: flex;
+      align-content: flex-end;
+    }
+    .btn {
+      background: white;
+      align-content: flex-end;
+      &:hover {
+        background: #b09ffc;
+      }
+      color: #7267f0e5;
+      width: 200px;
+      height: 48px;
+      font-size: 20px;
+      margin: 0px 10px;
+      font-family: "Brandon Grotesque Bold", sans-serif !important;
+      &:last-child {
+        margin-right: 0px;
+      }
+      border-radius: 10px;
+    }
+  }
+
+  .room-main {
+    background: #b09ffc;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    .room-main-sidebar {
+      min-width: 250px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      .room-content {
+        margin-bottom: 20px;
+        font-family: "Brandon Grotesque Light", sans-serif !important;
+        font-size: 18px;
+        color: white;
+        .room-title {
+          font-family: "Brandon Grotesque Bold", sans-serif !important;
+          font-size: 24px;
+          color: white;
+        }
+        .room-name {
+          padding: 10px;
+          background: #6e67bec5;
+        }
+      }
+      .users-content {
+        margin-bottom: 20px;
+        font-family: "Brandon Grotesque Light", sans-serif !important;
+        font-size: 18px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        flex-grow: 2;
+        .users-title {
+          font-family: "Brandon Grotesque Bold", sans-serif !important;
+          font-size: 24px;
+          color: white;
+        }
+        .users-list {
+          padding: 10px;
+          flex-grow: 2;
+          background: #6e67bec5;
+        }
+      }
+    }
+    .room-main-content {
+      flex-grow: 2;
+      background: #b09ffc;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: space-between;
+      .conversation {
+        flex-grow: 1.5;
+        background: white;
+        min-height: 400px;
+        font-family: "Brandon Grotesque Light", sans-serif !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .conversation-send,
+        .conversation-receive {
+          border-radius: 20px;
+          font-size: 16px;
+          text-align: center;
+          padding: 10px 20px;
+          margin: 10px;
+          color: rgba(36, 35, 35, 0.918);
+        }
+        .conversation-send {
+          background: #b09ffca6;
+          align-self: flex-end;
+        }
+        .conversation-receive {
+          background: rgba(182, 180, 180, 0.486);
+          align-self: flex-start;
+        }
+      }
+      .typing {
+        border: 0px;
+        background: #7267f0e5;
+        padding: 20px 20px;
+        .MuiOutlinedInput-notchedOutline {
+          border: 0px !important;
+        }
+        .send-icon {
+          font-size: 30px;
+          color: #6658ff;
+        }
+      }
+    }
+  }
+}

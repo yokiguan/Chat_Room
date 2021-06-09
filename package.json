@@ -1,0 +1,36 @@
+{
+  "name": "chat_room",
+  "version": "1.0.0",
+  "description": "real time chat room app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server --ignore 'client/**'"
+  },
+  "author": "scguan@foxmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.25.0",
+    "express": "^4.17.1",
+    "fastify": "^3.17.0",
+    "fastify-cookie": "^5.3.1",
+    "fastify-cors": "^6.0.1",
+    "graphql": "^15.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.95.6",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "node-rsa": "^1.1.1",
+    "sequelize": "^6.6.2",
+    "socket.io": "^4.1.2"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "nodemon": "^2.0.7"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
